@@ -85,9 +85,5 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "reactSnap": {
-    "include": [
-      "/",
-      "/404.html"
-    ]
   }
 }
