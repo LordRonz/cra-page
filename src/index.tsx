@@ -11,20 +11,16 @@ const rootElement = document.getElementById('root');
 
 if (rootElement?.hasChildNodes()) {
   hydrate(
-    <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </React.StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
     rootElement,
   );
 } else {
   render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </React.StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
     rootElement,
   );
 }
