@@ -1,7 +1,7 @@
 {
   "name": "coba-react-ngab",
   "version": "0.1.0",
-  "homepage": "https://lordronz.github.io/cra-page",
+  "homepage": "https://lordronz.github.io/cra-page/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
@@ -45,7 +45,6 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "postbuild": "react-snap",
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint:fix": "eslint src --fix"
