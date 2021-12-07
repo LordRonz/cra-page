@@ -3,6 +3,7 @@ import './styles/globals.css';
 
 import React, { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
+import { Route, Routes } from 'react-router';
 
 import Home from './components/Home';
 
@@ -23,7 +24,16 @@ export const Main = (): JSX.Element => (
 );
 
 const App = (): JSX.Element => (
-  <Main />
+  <Routes>
+    <Route
+      path="/"
+      element={(
+        <Suspense fallback={<div>Loading...</div>}>
+          <Main />
+        </Suspense>
+    )}
+    />
+  </Routes>
 );
 
 export default App;
