@@ -1,7 +1,7 @@
 {
   "name": "coba-react-ngab",
   "version": "0.1.0",
-  "homepage": "https://lordronz.github.io/cra-page/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
