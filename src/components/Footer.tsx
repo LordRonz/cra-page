@@ -23,9 +23,7 @@ const Footer = (): JSX.Element => (
         <Grid item>
           <Typography component="span">
             <Box textAlign="center" fontWeight="light" fontSize={14}>
-              © Aaron Christopher
-              {' '}
-              {new Date().getFullYear()}
+              © Aaron Christopher {new Date().getFullYear()}
             </Box>
           </Typography>
         </Grid>

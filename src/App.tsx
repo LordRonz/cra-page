@@ -22,8 +22,6 @@ export const Main = (): JSX.Element => (
   </div>
 );
 
-const App = (): JSX.Element => (
-  <Main />
-);
+const App = (): JSX.Element => <Main />;
 
 export default App;

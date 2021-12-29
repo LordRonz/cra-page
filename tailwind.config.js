@@ -7,9 +7,9 @@ module.exports = {
         '-69': '-69',
       },
       colors: {
-        'lrred': '#eb2754',
+        lrred: '#eb2754',
         'lrtext-white': '#ddd',
-      }
+      },
     },
   },
   variants: {

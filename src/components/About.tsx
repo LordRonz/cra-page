@@ -1,6 +1,4 @@
-import {
-  Box, Chip, Grid, Typography,
-} from '@mui/material';
+import { Box, Chip, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-scroll';
 
@@ -52,17 +50,12 @@ const About = (): JSX.Element => {
             </Typography>
             <Typography variant="body1" component="span">
               <Box>
-                Hi, I&apos;m Aaron Christopher, an undergraduate computer engineering
-                student.
-                I&apos;m a student at Institut Teknologi Sepuluh Nopember.
-                I always try to be honest and be kind to others.
-                Right now, I&apos;m looking for a new experience as part of being an
-                expert coder in the Future.
-                {' '}
+                Hi, I&apos;m Aaron Christopher, an undergraduate computer engineering student. I&apos;m a student at Institut
+                Teknologi Sepuluh Nopember. I always try to be honest and be kind to others. Right now, I&apos;m looking for
+                a new experience as part of being an expert coder in the Future.{' '}
                 <Link to="contact" smooth spy hashSpy href="#contact">
                   <span className="animated-underline link">Reach me out</span>
-                </Link>
-                {' '}
+                </Link>{' '}
                 to talk more about my works!
               </Box>
             </Typography>
@@ -77,9 +70,7 @@ const About = (): JSX.Element => {
               <Box fontWeight="fontWeightBold">Education</Box>
             </Typography>
             <Typography variant="h5" component="h5">
-              <Box fontWeight="fontWeightBold">
-                Institut Teknologi Sepuluh Nopember
-              </Box>
+              <Box fontWeight="fontWeightBold">Institut Teknologi Sepuluh Nopember</Box>
             </Typography>
             <Typography variant="body1" component="span">
               <Box>June 2019 - August 2023 (Expected)</Box>
