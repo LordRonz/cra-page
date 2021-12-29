@@ -40,24 +40,21 @@ const Contact = (): JSX.Element => {
           animation="scale-subtle"
           interactive
           hideOnClick={false}
-          content={(
+          content={
             <span className="inline-flex flex-col items-center p-2 bg-dark rounded-md shadow-md border-thin">
-              { copyStatus }
+              {copyStatus}
               <span className="inline-block font-bold" style={{ color: '#eb2754' }}>
-                { mail }
+                {mail}
               </span>
             </span>
-        )}
+          }
         >
           <div>
             <CopyToClipboard
               text={mail}
               onCopy={() => {
                 setCopyStatus('Copied to clipboard 😳');
-                setTimeout(
-                  () => setCopyStatus('Click to copy'),
-                  1469,
-                );
+                setTimeout(() => setCopyStatus('Click to copy'), 1469);
               }}
             >
               <span>

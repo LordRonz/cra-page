@@ -14,14 +14,14 @@ if (rootElement?.hasChildNodes()) {
     <BrowserRouter>
       <App />
     </BrowserRouter>,
-    rootElement,
+    rootElement
   );
 } else {
   render(
     <BrowserRouter>
       <App />
     </BrowserRouter>,
-    rootElement,
+    rootElement
   );
 }
 

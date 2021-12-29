@@ -1,7 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {
-  Box, Button, Link as LinkMui, Typography, Zoom,
-} from '@mui/material';
+import { Box, Button, Link as LinkMui, Typography, Zoom } from '@mui/material';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
@@ -48,13 +46,7 @@ const TextContainer = styled.div`
   z-index: 10;
 `;
 
-const meTitles = [
-  'Undergraduate Student',
-  'Wee',
-  'Web Developer',
-  'Backend Engineer',
-  'Python Enthusiast',
-];
+const meTitles = ['Undergraduate Student', 'Wee', 'Web Developer', 'Backend Engineer', 'Python Enthusiast'];
 
 const cvButtonStyle = {
   backgroundColor: '#992323',
@@ -82,10 +74,7 @@ const Home = (): JSX.Element => {
       }}
     >
       {meTitles[index]}
-      <Typist.Backspace
-        count={meTitles[index]?.length}
-        delay={500}
-      />
+      <Typist.Backspace count={meTitles[index]?.length} delay={500} />
     </Typist>
   );
 
@@ -101,10 +90,7 @@ const Home = (): JSX.Element => {
             <ThemeProvider theme={typoTheme}>
               <Typography variant="h3" component="h2">
                 <Box fontWeight="fontWeightBold">
-                  Hi, I&apos;m
-                  {' '}
-                  <span style={{ color: '#eb2754' }}>Aaron</span>
-                  .
+                  Hi, I&apos;m <span style={{ color: '#eb2754' }}>Aaron</span>.
                 </Box>
               </Typography>
               <Typography variant="h6" component="h3">
@@ -112,13 +98,7 @@ const Home = (): JSX.Element => {
               </Typography>
             </ThemeProvider>
             <Button variant="outlined" sx={cvButtonStyle}>
-              <LinkMui
-                href="cv.pdf"
-                rel="noopener"
-                color="inherit"
-                underline="none"
-                target="_blank"
-              >
+              <LinkMui href="cv.pdf" rel="noopener" color="inherit" underline="none" target="_blank">
                 See My CV
               </LinkMui>
             </Button>
@@ -126,28 +106,23 @@ const Home = (): JSX.Element => {
         </Zoom>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
           <figure className="w-36 md:w-52 z-10">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={hero}
-              width="300"
-              height="465"
-            />
+            <img className="object-cover object-center rounded" alt="hero" src={hero} width="300" height="465" />
           </figure>
         </div>
       </Container>
       <div className="absolute bottom-0 left-1/2 text-3xl transform -translate-y-1/2 -translate-x-1/2">
         <Link to="about" smooth spy hashSpy href="#about" aria-label="LESGO">
-          <UnstyledButtonCustom ele={(
-            <span>
-              <Typography>
-                <Box fontWeight="fontWeightBold">
-                  <ExpandMoreIcon />
-                  LESGO
-                </Box>
-              </Typography>
-            </span>
-          )}
+          <UnstyledButtonCustom
+            ele={
+              <span>
+                <Typography>
+                  <Box fontWeight="fontWeightBold">
+                    <ExpandMoreIcon />
+                    LESGO
+                  </Box>
+                </Typography>
+              </span>
+            }
           />
         </Link>
       </div>

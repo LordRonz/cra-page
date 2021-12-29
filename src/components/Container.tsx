@@ -1,27 +1,17 @@
-import {
-  Box, Grid, Typography,
-} from '@mui/material';
-import PropTypes from 'prop-types';
+import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 import style from './Container.module.css';
 
 interface ComponentProp {
-  id: string,
-  title: string,
-  subTitle: string,
-  children: JSX.Element | JSX.Element[],
+  id: string;
+  title: string;
+  subTitle: string;
+  children: JSX.Element | JSX.Element[];
 }
 
-const Container = ({
-  id, title, subTitle, children,
-}: ComponentProp): JSX.Element => (
-  <Grid
-    container
-    className={style.root}
-    spacing={0}
-    id={id}
-  >
+const Container = ({ id, title, subTitle, children }: ComponentProp): JSX.Element => (
+  <Grid container className={style.root} spacing={0} id={id}>
     <Grid item xs={12}>
       <Grid container justifyContent="center">
         <Grid item>
@@ -42,15 +32,5 @@ const Container = ({
     {children}
   </Grid>
 );
-
-Container.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Container;

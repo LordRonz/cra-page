@@ -1,6 +1,4 @@
-import {
-  Box, Grid, Typography, Zoom,
-} from '@mui/material';
+import { Box, Grid, Typography, Zoom } from '@mui/material';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -20,11 +18,7 @@ const NotFoundPage = (): JSX.Element => (
                 <Typography variant="h1" component="h1" className="text-lrred">
                   <Box fontWeight="fontWeightBold">404</Box>
                 </Typography>
-                <Typography
-                  variant="h5"
-                  component="h2"
-                  className="text-lrrwhite"
-                >
+                <Typography variant="h5" component="h2" className="text-lrrwhite">
                   <Typist startDelay={300} avgTypingDelay={80}>
                     Page Not Found
                   </Typist>
